@@ -1,0 +1,9 @@
+{
+  "title": "众筹",
+  "data": [
+    {"productName":"无线手持电动摩擦机","price":499,"support":30000,"percentage":1947,"productImg":"/static/images/product.png"},
+    {"productName":"无线手持电动摩擦机","price":499,"support":30000,"percentage":1947,"productImg":"/static/images/product.png"},
+    {"productName":"无线手持电动摩擦机","price":499,"support":30000,"percentage":1947,"productImg":"/static/images/product.png"},
+    {"productName":"无线手持电动摩擦机","price":499,"support":30000,"percentage":1947,"productImg":"/static/images/product.png"}
+  ]
+}

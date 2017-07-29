@@ -1,0 +1,9 @@
+{
+  "data": [
+    {"images": "/static/images/banner1.jpg"},
+    {"images": "/static/images/banner2.jpg"},
+    {"images": "/static/images/banner3.jpg"},
+    {"images": "/static/images/banner4.jpg"},
+    {"images": "/static/images/banner5.jpg"}
+  ]
+}

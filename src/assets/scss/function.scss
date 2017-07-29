@@ -1,0 +1,30 @@
+// px转换成re单位
+@function px2rem($px, $base-font-size: 75px) {
+  @if (unitless($px)) {
+      @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels for you";
+      @return px2em($px + 0px); // That may fail.
+  } @else if (unit($px) == em) {
+      @return $px;
+  }
+  @return ($px / $base-font-size) * 1rem;
+}
+
+// 字体在不同的dpr下呈现的字体
+@mixin font-dpr($font-size) {
+  font-size: $font-size;
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr='3'] & {
+    font-size: $font-size * 3;
+  }
+}
+
+@mixin tap-highlight {
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color:rgba(0, 0, 0, 0);
+  -o-tap-highlight-color:rgba(0, 0, 0, 0);
+  tap-highlight-color:rgba(0, 0, 0, 0);
+}
